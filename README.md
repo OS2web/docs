@@ -1,4 +1,4 @@
-# OS2Forms
+# OS2Web
 
 ## Table of contents
 
@@ -13,11 +13,11 @@
 <a name="description"></a>
 ## Description
 
-__OS2Forms__ is a drupal based solution for creating advanced webform functionality for Danish Municipalities.
+__OS2Web__ is a drupal based solution for creating Drupal projects for Danish Municipalities.
 
 <a name="license"></a>
 ## License
-All OS2Forms projects are using [EUPL v1.2 License](https://opensource.org/licenses/EUPL-1.2).
+All OS2Web projects are using [EUPL v1.2 License](https://opensource.org/licenses/EUPL-1.2).
 
 <a name="testing-and-ci"></a>
 ## Testing and CI
@@ -30,7 +30,6 @@ To improve code quality and integration possibilities there are using set of fol
   for twig templates.
  * [Drupl-check](https://github.com/mglaman/drupal-check) to check project
  readiness to Drupal 9 via checking of deprecated code usage.
- * @TODO [PHPUnit](https://phpunit.de/) test to check key contrib modules tests.
 
 For more details about travis-ci continuous integration builds
 see `.travis-ci.yml` file.
@@ -40,7 +39,7 @@ development scope.
 
 <a name="git-guideline"></a>
 ## Git guideline
-Since OS2Forms is Drupal module project, there is used drupal-friendly
+Since OS2Web is Drupal module project, there is used drupal-friendly
 git branch/tag names.
 
 ### Bracnhes
@@ -48,9 +47,7 @@ git branch/tag names.
 * `8.x-2.x` - development branch for version 2.x.
 
 There is no specific rules for feature branch names. However we recommend
-use [OS2Forms JIRA](https://os2web.atlassian.net/browse/OS2FORMS) or
-[github issue](https://github.com/OS2Forms/os2forms/issues) ticket number
-as prefix for your branch name.
+use github issue ticket number as prefix for your branch name.
 
 ### Tags
 Release tags should be created from related branches. 
