@@ -39,22 +39,32 @@ development scope.
 
 <a name="git-guideline"></a>
 ## Git guideline
-Since OS2Web is Drupal module project, there is used drupal-friendly
-git branch/tag names.
+Project use default approach for branch naming.
 
 ### Bracnhes
-* `8.x` - genral development branch.
-* `8.x-2.x` - development branch for version 2.x.
+* `develop` - general development branch (Default).
+* `develop-2.x` - development branch for version 2.x. (if requires)
+* `master` - stable version of code.
 
 There is no specific rules for feature branch names. However we recommend
 use github issue ticket number as prefix for your branch name.
 
 ### Tags
-Release tags should be created from related branches. 
-Examples for tags created from `8.x-2.x`:
-* `8.x-2.0-alpha`, `8.x-2.0-alpha1`, `8.x-2.0-beta` - test release tags.
-* `8.x-2.0-rc1`, `8.x-2.0-rc2` - release candidate tags.
-* `8.x-2.0`, `8.x-2.1` - stable release tags.
+Release tags should be created from related branches. Tag name space should
+ follow [Semantic Versioning](https://semver.org/) rules. 
+Given a version number MAJOR.MINOR.PATCH, increment the:
+
+* MAJOR version when you make incompatible API changes,
+* MINOR version when you add functionality in a backwards compatible manner, and
+* PATCH version when you make backwards compatible bug fixes.
+
+#### Outdated approach
+Since OS2Forms projects are Drupal friendly, there was used drupal-friendly
+git branch/tag names like 8.x, 8.x-2.x. Please keep use it or ask about changes
+in case this names are not compatible with changes you have.
+
+For new repositories it was decided to switch back to github,
+composer way to for branch names.
 
 <a name="code-review"></a>
 ## Code review
